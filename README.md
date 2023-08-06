@@ -11,44 +11,6 @@ This project is a WhatsApp bot that uses OpenAI's ChatGPT (GPT-4) to respond to 
 - An OpenAI Account
 - A Whatsapp Account
 
-## Installation
-
-### 1. Clone the repository
-
-```bash
-git clone https://github.com/noelzappy/chatgpt-whatsapp.git
-```
-
-```bash
-cd chatgpt-whatsapp
-```
-
-### 2. Install depedencies
-
-```bash
-yarn install
-```
-
-### 3. Create `.env` file and update the update the OpenAI API keys and Organization ID
-
-```bash
-cp .env.example .env
-```
-
-```bash
- nano .env # opens the `.env` file for you to update the details
-```
-
-### 4. Start the Bot.
-
-```bash
-yarn start
-```
-
-### 5. Scan the QR Code with Whatsapp (Link a device)
-
-### 6. Now you're ready to go :)
-
 ## Usage
 
 The bot will now respond to all messages you receive.
@@ -78,7 +40,3 @@ To change the prefixes, update the array located inside `src/configs/constants.t
 The bot only responds to messages that are received by you, not sent. It will also work with group messages.
 The bot will respond to all private messages you receive and only messages taht contain any of the prefixes in group chats.
 To change the OpenAI model being used, update the `OPENAI_MODEL` variable in the `config/constants.ts` file.
-
-## Used libraries
-
-- https://github.com/pedroslopez/whatsapp-web.js
